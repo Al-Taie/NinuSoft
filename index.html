@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NinuSoft - Coming Soon. Stay tuned for our upcoming launch.">
   <title>NinuSoft - Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <div class="logo-area">
-      <span class="logo-text" id="auto-type"></span>
-      <span class="cursor" id="cursor">|</span>
-    </div>
-    <div class="contact">
-      <a class="contact-item" href="https://t.me/NinuSoft" target="_blank" rel="noopener" title="Chat on Telegram">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" class="icon" alt="Telegram"/>
-        <span>@NinuSoft</span>
-      </a>
-      <a class="contact-item" href="mailto:support@ninusoft.com" title="Send Email">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" class="icon" alt="Email"/>
-        <span>support@ninusoft.com</span>
-      </a>
-    </div>
-    <div class="coming-soon">
-      <span>Coming soon</span>
+    <div class="content-wrapper">
+      <div class="logo-area">
+        <!-- Static logo text -->
+        <span class="logo-text">NinuSoft</span>
+      </div>
+      <nav class="contact" aria-label="Contact Information">
+        <a href="https://t.me/NinuSoft" class="contact-item">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" class="icon" alt="Telegram Icon">
+          <span>@NinuSoft</span>
+        </a>
+        <a href="mailto:support@ninusoft.com" class="contact-item">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" class="icon" alt="Email Icon">
+          <span>support@ninusoft.com</span>
+        </a>
+      </nav>
+      <div class="coming-soon">
+        <!-- "Coming soon" text will be typed out -->
+        <span id="auto-type"></span>
+        <span class="cursor" id="coming-cursor">|</span>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
